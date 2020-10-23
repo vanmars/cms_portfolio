@@ -9,7 +9,7 @@
   <h3>Status: In progress</h3>
 <% end %>
 
-<p><%= link_to "Edit", edit_project_path(@project) %></p>
-<p><%= link_to "Delete", project_path(@project), :data => {:confirm => "You sure?", :method => "delete"} %></p>
-
-<p><%= link_to "Return to projects", projects_path %></p>
+<% if is_admin? %>
+  <p><%= link_to "Edit", edit_project_path(@project) %></p>
+  <p><%= link_to "Delete", project_path(@project), :data => {:confirm => "You sure?", :method => "delete"} %></p>
+<% end %>

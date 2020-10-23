@@ -10,5 +10,6 @@
   <p>There are no projects yet.</p>
 <% end %>
 
-
-<p><%= link_to "Create new project", new_project_path %></p>
+<% if is_admin? %>
+  <p><%= link_to "Create new project", new_project_path %></p>
+<% end %>
