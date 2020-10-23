@@ -18,6 +18,7 @@ class PostsController < ApplicationController
     else
       flash[:alert] = 'There was an error! Please try again.'
       render :new
+    end
   end
 
   def show
@@ -38,6 +39,7 @@ class PostsController < ApplicationController
     else
       flash[:alert] = 'There was an error! Please try again.'
       render :edit
+    end
   end
 
   def destroy

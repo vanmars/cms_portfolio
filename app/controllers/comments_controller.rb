@@ -12,6 +12,10 @@ class CommentsController < ApplicationController
     if @comment.save
       flash[:notice] = 'Comment successfully added!'
       redirect_to post_path(@post)
+    else
+      flash[:alert] = 'There was an error! Please try again.'
+      render :new
+    end
   end
 
   def show
@@ -34,6 +38,7 @@ class CommentsController < ApplicationController
     else 
       flash[:alert] = 'There was an error! Please try again.'
       render :edit
+    end
   end
 
   def destroy

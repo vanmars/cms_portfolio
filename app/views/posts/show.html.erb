@@ -1,0 +1,13 @@
+<h1>Individual Post Page!</h1>
+<hr>
+<div class="card p-2"
+  <h1>Title: <%= @post.title %></h1>
+  <hr>
+  <p>Post: <%= @post.body %></p>
+</div>
+<hr>
+
+<p><%= link_to "Edit", edit_post_path(@post) %></p>
+<p><%= link_to "Delete", post_path(@post), :data => {:confirm => "You sure?", :method => "delete"} %></p>
+
+<p><%= link_to "Return to posts", posts_path %></p>
