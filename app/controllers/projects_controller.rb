@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
   before_action except: [:index, :show] do 
+    flash[:alert] = 'You do not have access to this content.'
     redirect_to projects_path unless is_admin?
   end
 
