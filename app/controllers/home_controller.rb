@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  skip_before_action :authenticate_user!, :only [:index]
+
   def index
     if current_user
       @name = current_user.first_name
@@ -7,3 +9,4 @@ class HomeController < ApplicationController
     end
   end
 end
+ß
