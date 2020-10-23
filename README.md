@@ -1,4 +1,4 @@
-# _Basic CMS Portfolio_
+# _Basic CMS Portfolio Application_
 
 _23 October 2020_
 
@@ -41,6 +41,7 @@ It is fine if this is a site that is only for your portfolio, but you are also e
 To View Project:
 * Open a web browser of your choice and navigate to the following page: COMING SOON!
 
+To Extend Project:
 1. Install Rails
 - For this project, you will need Ruby. Follow the directions [here](https://www.learnhowtoprogram.com/ruby-and-rails/getting-started-with-ruby/ruby-installation-and-setup) for setting up Ruby.
 - Install Rails on your machine with the following terminal command `gem install rails -v 5.2.0`
@@ -59,10 +60,26 @@ To View Project:
 - To Run Tests: While in the root directory of this project, run `rspec` in your command line.
 - To Run the App in Browser: While in the root directory of the project, run `rails s` in the terminal. This will start a server, which you can access by entering `localhost:3000` in your browser.
 
+5. To Set a New Admin User
+- Run `rails c` in terminal to open up Rails console.
+- Run `User.all` to see all users in database.
+- Find the correct one and save in variable. (Ex. `user = User.all.first`)
+- Set user variable's admin value to true. (Ex. `user.admin = true`)
+- Save user (Ex. `user.save`)
+- Leave the conosle by running `exit`.
+
 ## Known Bugs
 
 * Figure out why registration form does not add first and last name to database (probably because default is set to "")
 * Some bootstrap styling (display-4) not working; not sure why?
+
+## Items to Improve
+
+* Complete all stretch specifications
+* Add username or email to navbar, once user logs in
+* Improve overall styling
+* Refactor
+* Add integration tests
 
 ## Support and Contact Details
 
@@ -75,7 +92,7 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 * JavaScript/jQuery
 * Ruby
 * Rails
-* Added Ruby Gems: Capybara, Devise, jquery-rails, Launchy, Pry, RSpec-Rails, Shoulda-Matchers, Simplecov
+* Added Ruby Gems: Capybara, Devise, jQuery-Rails, Launchy, Pry, RSpec-Rails, Shoulda-Matchers, SimpleCov
 * Postgres
 
 ### License
