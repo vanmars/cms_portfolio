@@ -1,18 +1,17 @@
 class ProjectsController < ApplicationController
-  before_action :set_user
 
   def index
-    @projects = @user.projects
+    @projects = Project.all
     render :index
   end
 
   def new
-    @project = @user.projects.new
+    @project = Project.new
     render :new
   end
 
   def create
-    @project = @user.projects.new(project_params)
+    @project = Project.new(project_params)
     if @project.save
       flash[:notice] = "Project successfully added!"
       redirect_to project_path(@project)
@@ -35,10 +34,10 @@ class ProjectsController < ApplicationController
   def update
     @project = Project.find(params[:id])
     if @project.update(project_params)
-      flash[:notice] = "Project successfully updated"
+      flash[:notice] = "Project successfully updated!"
       redirect_to project_path(@project)
     else
-      flash[:alert] = "there was an error. Please try again."
+      flash[:alert] = "There was an error. Please try again."
       render :edit
     end
   end
@@ -54,9 +53,4 @@ class ProjectsController < ApplicationController
   def project_params
     params.require(:project).permit(:title, :description, :complete)
   end
-
-  def set_user
-    @user = current_user
-  end
-
 end
