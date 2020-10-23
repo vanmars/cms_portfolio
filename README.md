@@ -91,7 +91,7 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 * CSS/Bootstrap
 * JavaScript/jQuery
 * Ruby
-* Rails
+* Ruby on Rails
 * Added Ruby Gems: Capybara, Devise, jQuery-Rails, Launchy, Pry, RSpec-Rails, Shoulda-Matchers, SimpleCov
 * Postgres
 
