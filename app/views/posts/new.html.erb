@@ -1,13 +1,3 @@
 <h1>Create New Post Page!</h1>
 
-<%= form_for [@post] do |f| %>
-  <div class='form-group'>
-    <%= f.label :title %>
-    <%= f.text_field :title, class: 'form-control' %>
-  </div>
-  <div class='form-group'>
-    <%= f.label :body %>
-    <%= f.text_field :body, class: 'form-control' %>
-  </div>
-  <%= f.submit 'Submit', class: 'btn btn-success' %>
-<% end %>
+<%= render 'shared/post_form' %>
