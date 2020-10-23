@@ -34,6 +34,7 @@ It is fine if this is a site that is only for your portfolio, but you are also e
 | 6 | Allow users to sort posts based on which post has the most comments. |
 
 ## Data Tables Visualization
+<img src="./app/assets/images/tables.png">
 
 ## Setup/Installation Requirements
 
