@@ -1,1 +1,15 @@
 <h1>Individual Project Page!</h1>
+
+<h1>Title: <%= @project.title %></h1>
+<h3>Description: <%= @project.description %></h3>
+
+<% if @project.complete? %>
+  <h3>Status: Complete!</h3>
+<% else %>
+  <h3>Status: In progress</h3>
+<% end %>
+
+<p><%= link_to "Edit", edit_project_path(@project) %></p>
+<p><%= link_to "Delete", project_path(@project), :data => {:confirm => "You sure?", :method => "delete"} %></p>
+
+<p><%= link_to "Return to projects", projects_path %></p>

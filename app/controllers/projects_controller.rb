@@ -7,7 +7,7 @@ class ProjectsController < ApplicationController
   end
 
   def new
-    @projects = @user.projects.new
+    @project = @user.projects.new
     render :new
   end
 
