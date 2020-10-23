@@ -1,5 +1,8 @@
 class PostsController < ApplicationController
-
+  before_action except: [:index, :show] do 
+    redirect_to projects_path unless is_admin?
+  end
+  
   def index
     @posts = Post.all
     render :index
