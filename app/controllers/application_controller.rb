@@ -5,9 +5,9 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
 
   # Helpers for Controller and Views
-  helper_method :is_admin
+  helper_method :is_admin?
 
   def is_admin?
-    current_user && current_user.is_admin
+    current_user && current_user.admin
   end
 end
