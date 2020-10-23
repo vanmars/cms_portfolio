@@ -62,7 +62,7 @@ To View Project:
 ## Known Bugs
 
 * Figure out why registration form does not add first and last name to database (probably because default is set to "")
-* Some bootstrap styling (display-4) not working
+* Some bootstrap styling (display-4) not working; not sure why?
 
 ## Support and Contact Details
 
