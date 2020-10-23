@@ -10,5 +10,6 @@
   <p>There are no posts yet.</p>
 <% end %>
 
-
-<p><%= link_to "Create new post", new_post_path %></p>
+<% if is_admin? %>
+  <p><%= link_to "Create new post", new_post_path %></p>
+<% end %>
