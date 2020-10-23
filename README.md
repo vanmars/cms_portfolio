@@ -71,10 +71,11 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 
 * HTML
 * CSS/Bootstrap
+* JavaScript/jQuery
 * Ruby
 * Rails
-* Added Ruby Gems: Capybara, Devise, Pry, RSpec, Simplecov
-* Postgres/
+* Added Ruby Gems: Capybara, Devise, jquery-rails, Launchy, Pry, RSpec-Rails, Shoulda-Matchers, Simplecov
+* Postgres
 
 ### License
 
