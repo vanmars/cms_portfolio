@@ -80,6 +80,7 @@ To Extend Project:
 * Complete all stretch specifications
 * Add integration tests
 * Refactor controllers
+* Make user flash messages white for readability
 
 ## Support and Contact Details
 
