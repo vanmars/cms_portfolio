@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  skip_before_action :authenticate_user!
+  skip_before_action :authenticate_user!, only: [:index]
 
   def index
     if current_user
@@ -8,4 +8,9 @@ class HomeController < ApplicationController
       @name = 'Stranger'
     end
   end
+
+  def profile
+    @user = current_user
+  end
+
 end

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: "home#index"
   get 'home/index'
+  get 'home/profile', to: 'home#profile', as: 'profile'
 
   devise_for :users
 
@@ -9,5 +10,7 @@ Rails.application.routes.draw do
   resources :posts do
     resources :comments
   end
+
+  
   
 end
