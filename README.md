@@ -95,6 +95,9 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 * Added Ruby Gems: Capybara, Devise, jQuery-Rails, Launchy, Pry, RSpec-Rails, Shoulda-Matchers, SimpleCov
 * Postgres
 
+## Photo Credits
+<span>Home page photo by <a href="https://unsplash.com/@retrosupply?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">RetroSupply</a> on <a href="https://unsplash.com/s/photos/portfolio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
 ### License
 
 Copyright (c) 2020 **_Vanessa Stewart_**
