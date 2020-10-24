@@ -13,7 +13,9 @@
         <% @projects.each do |project| %>
           <div class="col mb-4">
             <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+              <% if project.image.attachment != nil %>
+                <%= image_tag(project.image, class:"card-img-top", alt:"project image") %>
+              <% end %>
               <div class="card-body">
                 <h5 class="card-title"><%= link_to project.title, project_path(project) %></h5>
                 <p class="card-text"><%= project.description %></p>

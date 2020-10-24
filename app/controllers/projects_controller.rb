@@ -1,7 +1,9 @@
 class ProjectsController < ApplicationController
   before_action except: [:index, :show] do 
-    flash[:alert] = 'You do not have access to this content.' unless is_admin?
-    redirect_to projects_path unless is_admin?
+    unless is_admin?
+      flash[:alert] = 'You do not have access to this content.'
+      redirect_to projects_path 
+      end
   end
 
   def index
@@ -16,6 +18,7 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(project_params)
+    @project.image.attach(params[:project][:image])
     if @project.save
       flash[:notice] = "Project successfully added!"
       redirect_to project_path(@project)
@@ -55,6 +58,6 @@ class ProjectsController < ApplicationController
 
   private
   def project_params
-    params.require(:project).permit(:title, :description, :complete)
+    params.require(:project).permit(:title, :description, :complete, :image)
   end
 end
