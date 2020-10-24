@@ -1,20 +1,21 @@
 <div class="container">
-  <div class="jumbtotron bg-dark text-white">
-    <h1 class="display-3">Individual Project Page!</h1>
+  <!-- Header -->
+  <div class="align-items-center justify-content-center">
+    <div class="jumbotron bg-dark text-center text-white">
+      <h1 class="display-2"><%= @project.title %></h1>
+      <% if is_admin? %>
+        <%= link_to "Edit", edit_project_path(@project) %> |
+        <%= link_to "Delete", project_path(@project), :data => {:confirm => "You sure?", :method => "delete"} %>
+      <% end %>
+    </div>
+    <!-- Project Card -->
+    <div class="card card-shadow p-4">
+      <h3 class="display-4">Description<br><span class="lead"><%= @project.description %></span></h3>
+      <hr>
+      <% if @project.complete? %>
+        <h3 class="display-4">Status: <span class="lead">Complete!</span></h3>
+      <% else %>
+        <h3>Status: <span class="lead">In progress</span></h3>
+      <% end %>
   </div>
-
-
-  <h1>Title: <%= @project.title %></h1>
-  <h3>Description: <%= @project.description %></h3>
-
-  <% if @project.complete? %>
-    <h3>Status: Complete!</h3>
-  <% else %>
-    <h3>Status: In progress</h3>
-  <% end %>
-
-  <% if is_admin? %>
-    <p><%= link_to "Edit", edit_project_path(@project) %></p>
-    <p><%= link_to "Delete", project_path(@project), :data => {:confirm => "You sure?", :method => "delete"} %></p>
-  <% end %>
 </div>
