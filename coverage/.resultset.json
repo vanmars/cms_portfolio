@@ -662,14 +662,14 @@
           1,
           1,
           1,
-          null,
           1,
           null,
           1,
           null,
           1,
-          1,
           null,
+          1,
+          1,
           null,
           null
         ]
@@ -681,6 +681,8 @@
           null,
           1,
           null,
+          null,
+          1,
           null
         ]
       },
@@ -701,6 +703,10 @@
           null,
           null,
           1,
+          null,
+          1,
+          0,
+          null,
           null,
           1,
           0,
@@ -739,6 +745,12 @@
       "/Users/vanessa/Desktop/ruby/cms_portfolio/app/controllers/comments_controller.rb": {
         "lines": [
           1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
           null,
           1,
           0,
@@ -747,6 +759,7 @@
           null,
           null,
           1,
+          0,
           0,
           0,
           0,
@@ -806,12 +819,22 @@
           1,
           null,
           null,
+          null,
+          1,
+          0,
+          null,
           null
         ]
       },
       "/Users/vanessa/Desktop/ruby/cms_portfolio/app/controllers/posts_controller.rb": {
         "lines": [
           1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
           null,
           1,
           0,
@@ -824,6 +847,7 @@
           null,
           null,
           1,
+          0,
           0,
           0,
           0,
@@ -872,6 +896,12 @@
       "/Users/vanessa/Desktop/ruby/cms_portfolio/app/controllers/projects_controller.rb": {
         "lines": [
           1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
           null,
           1,
           0,
@@ -884,6 +914,7 @@
           null,
           null,
           1,
+          0,
           0,
           0,
           0,
@@ -947,18 +978,28 @@
         "lines": [
           1,
           1,
+          1,
           null
         ]
       },
       "/Users/vanessa/Desktop/ruby/cms_portfolio/app/models/post.rb": {
         "lines": [
           1,
+          null,
+          1,
+          null,
+          null,
           1,
           null
         ]
       },
       "/Users/vanessa/Desktop/ruby/cms_portfolio/app/models/project.rb": {
         "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
           1,
           null
         ]
@@ -977,6 +1018,9 @@
           1,
           null,
           1,
+          2,
+          2,
+          2,
           null
         ]
       },
@@ -1014,6 +1058,6 @@
         ]
       }
     },
-    "timestamp": 1603493008
+    "timestamp": 1603518892
   }
 }
