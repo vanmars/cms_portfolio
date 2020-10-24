@@ -4,4 +4,7 @@ class Post < ApplicationRecord
 
   # Active Storage
   has_one_attached :image
+
+  # Validations
+  validates :title, :body, presence: true
 end
