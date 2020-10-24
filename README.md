@@ -73,14 +73,14 @@ To Extend Project:
 
 ## Known Bugs
 
-* Registration form does not add first, last, and user name to database 
+* Registration form does not add first, last, and user name to database. I suspect the problem is in the views devise folder. 
 
 ## Items to Improve
 
-* Complete all stretch specifications
+* Complete final stretch specification.
 * Add integration tests
 * Refactor controllers
-* Make user flash messages white for readability
+* Make devise user flash messages white for readability
 
 ## Support and Contact Details
 
