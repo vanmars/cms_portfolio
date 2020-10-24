@@ -19,6 +19,7 @@
       <% @post.comments.each do |comment| %>
         <div class="card p-3">
           <p><%= comment.body %>
+          <p class="muted-text"> - <%= comment.user.username %></p>
           <% if is_admin? %>   
             <p>  
               <%= link_to "Edit", edit_post_comment_path(@post, comment) %> | 
