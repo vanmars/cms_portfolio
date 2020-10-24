@@ -79,7 +79,7 @@ To Extend Project:
 
 * Complete all stretch specifications
 * Add integration tests
-* Refactor
+* Refactor controllers
 
 ## Support and Contact Details
 
