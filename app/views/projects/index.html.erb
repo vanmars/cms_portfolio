@@ -1,15 +1,31 @@
-<h1>Projects Page!</h1>
-
-<% if @projects.any? %>
-  <ul>
-    <% @projects.each do |project| %>
-      <li><%= link_to project.title, project_path(project) %></li>
+<div class="container">
+  <!-- Header -->
+  <div class="align-items-center justify-content-center">
+    <div class="jumbotron bg-dark text-center text-white">
+      <h1 class="display-2">Projects</h1>
+      <% if is_admin? %>
+        <p><%= link_to "Create new project", new_project_path %></p>
+      <% end %> 
+    </div>
+    <!-- Project Cards Grid -->
+    <% if @projects.any? %>
+      <div class="row row-cols-1 row-cols-md-2">
+        <% @projects.each do |project| %>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><%= link_to project.title, project_path(project) %></h5>
+                <p class="card-text"><%= project.description %></p>
+              </div>
+            </div>
+          </div>
+        <% end %> 
+      </div>
+    <% else %>
+      <div class="card">
+        <p>There are no projects yet.</p>
+      </div>
     <% end %>
-  </ul>
-<% else %>
-  <p>There are no projects yet.</p>
-<% end %>
-
-<% if is_admin? %>
-  <p><%= link_to "Create new project", new_project_path %></p>
-<% end %>
+  </div>
+</div>

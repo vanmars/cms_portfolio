@@ -1,15 +1,20 @@
-<h1>Individual Project Page!</h1>
+<div class="container">
+  <div class="jumbtotron bg-dark text-white">
+    <h1 class="display-3">Individual Project Page!</h1>
+  </div>
 
-<h1>Title: <%= @project.title %></h1>
-<h3>Description: <%= @project.description %></h3>
 
-<% if @project.complete? %>
-  <h3>Status: Complete!</h3>
-<% else %>
-  <h3>Status: In progress</h3>
-<% end %>
+  <h1>Title: <%= @project.title %></h1>
+  <h3>Description: <%= @project.description %></h3>
 
-<% if is_admin? %>
-  <p><%= link_to "Edit", edit_project_path(@project) %></p>
-  <p><%= link_to "Delete", project_path(@project), :data => {:confirm => "You sure?", :method => "delete"} %></p>
-<% end %>
+  <% if @project.complete? %>
+    <h3>Status: Complete!</h3>
+  <% else %>
+    <h3>Status: In progress</h3>
+  <% end %>
+
+  <% if is_admin? %>
+    <p><%= link_to "Edit", edit_project_path(@project) %></p>
+    <p><%= link_to "Delete", project_path(@project), :data => {:confirm => "You sure?", :method => "delete"} %></p>
+  <% end %>
+</div>
