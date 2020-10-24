@@ -70,14 +70,11 @@ To Extend Project:
 
 ## Known Bugs
 
-* Figure out why registration form does not add first and last name to database (probably because default is set to "")
-* Some bootstrap styling (display-4) not working; not sure why?
+* Registration form does not add first and last name to database 
 
 ## Items to Improve
 
 * Complete all stretch specifications
-* Add username or email to navbar, once user logs in
-* Improve overall styling
 * Refactor
 * Add integration tests
 
