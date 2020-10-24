@@ -11,6 +11,8 @@ class PostsController < ApplicationController
       @posts = Post.newest
     elsif params[:oldest]
       @posts = Post.oldest
+    elsif params[:most_comments]
+      @posts = Post.most_comments
     else
       @posts = Post.all
     end
