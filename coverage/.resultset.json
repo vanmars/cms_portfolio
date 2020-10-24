@@ -26,6 +26,9 @@
           null,
           1,
           2,
+          2,
+          null,
+          2,
           null
         ]
       },
@@ -981,7 +984,11 @@
       "/Users/vanessa/Desktop/ruby/cms_portfolio/app/models/comment.rb": {
         "lines": [
           1,
+          null,
           1,
+          1,
+          null,
+          null,
           1,
           null
         ]
@@ -1076,6 +1083,6 @@
         ]
       }
     },
-    "timestamp": 1603519315
+    "timestamp": 1603519425
   }
 }
