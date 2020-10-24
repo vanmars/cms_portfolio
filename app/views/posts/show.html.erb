@@ -20,7 +20,7 @@
         <div class="card p-3">
           <p><%= comment.body %>
           <p class="muted-text"> - <%= comment.user.username %></p>
-          <% if is_admin? %>   
+          <% if is_admin? || comment.user == current_user %>   
             <p>  
               <%= link_to "Edit", edit_post_comment_path(@post, comment) %> | 
               <%= link_to "Delete", post_comment_path(@post, comment), :data => {:confirm => "You sure?", :method => "delete"} %>

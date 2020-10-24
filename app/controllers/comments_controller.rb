@@ -1,7 +1,9 @@
 class CommentsController < ApplicationController
   before_action except: [:new, :create, :show] do 
-    flash[:alert] = 'You do not have access to this content.' unless is_admin?
-    redirect_to post_path(Post.find(params[:post_id])) unless is_admin?
+    unless is_admin? || is_creator?
+      flash[:alert] = 'You do not have access to this content.' 
+      redirect_to post_path(Post.find(params[:post_id])) 
+      end
   end
 
   def new
