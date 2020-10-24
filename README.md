@@ -25,15 +25,15 @@ It is fine if this is a site that is only for your portfolio, but you are also e
 | 6 | As an admin, I want to be able to delete comments by other users that are inappropriate. | 
 | 7 | As a user, I want to be able to create an account and add a comment to a post. (A post can have many comments.) |
 | 8 | As a user, I want to update or delete my own comments. Other users should not have this functionality unless they are admins. | 
+| 9 | As an admin, I want to add pictures to my projects and posts. |
 
 
 ## Stretch Specifications
 | Spec     | Behavior | 
 | -------- | -------- | 
-| 1 | Add ActiveStorage to the project so admins can add pictures to their projects and posts. |
-| 2 | Add a timestamp to posts and make them sortable by oldest or newest. | 
-| 3 | Allow users to search the site for projects by name. |
-| 4 | Allow users to sort posts based on which post has the most comments. |
+| 1 | Add a timestamp to posts and make them sortable by oldest or newest. | 
+| 2 | Allow users to search the site for projects by name. |
+| 3 | Allow users to sort posts based on which post has the most comments. |
 
 ## Data Tables Visualization
 <img src="./app/assets/images/tables.png">
@@ -72,13 +72,13 @@ To Extend Project:
 
 ## Known Bugs
 
-* Registration form does not add first and last name to database 
+* Registration form does not add first, last, and user name to database 
 
 ## Items to Improve
 
 * Complete all stretch specifications
-* Refactor
 * Add integration tests
+* Refactor
 
 ## Support and Contact Details
 
@@ -88,7 +88,6 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 
 * HTML
 * CSS/Bootstrap
-* JavaScript/jQuery
 * Ruby
 * Ruby on Rails
 * Added Ruby Gems: Capybara, Devise, jQuery-Rails, Launchy, Pry, RSpec-Rails, Shoulda-Matchers, SimpleCov
