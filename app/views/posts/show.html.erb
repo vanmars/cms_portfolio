@@ -1,26 +1,32 @@
-<h1>Individual Post Page!</h1>
-<hr>
-<div class="card p-2"
-  <h1>Title: <%= @post.title %></h1>
-  <hr>
-  <p>Post: <%= @post.body %></p>
-</div>
-<hr>
-<% if @post.comments.any? %>
-  <h3>Comments</h3>
-  <% @post.comments.each do |comment| %>
-    <p><%= comment.body %>
-    <% if is_admin? %>     
-      <%= link_to "Edit", edit_post_comment_path(@post, comment) %> | 
-      <%= link_to "Delete", post_comment_path(@post, comment), :data => {:confirm => "You sure?", :method => "delete"} %>
+<div class="container">
+  <!-- Header -->
+  <div class="align-items-center justify-content-center">
+    <div class="jumbotron bg-dark text-center text-white">
+      <h1 class="display-2"><%= @post.title %></h1>
+      <% if is_admin? %>   
+        <%= link_to "Edit Post", edit_post_path(@post) %> |
+        <%= link_to "Delete Post", post_path(@post), :data => {:confirm => "You sure?", :method => "delete"} %>
+      <% end %>
+    </div>
+    <!-- Post Card -->
+    <div class="card card-shadow p-4">
+      <p class="lead"><%= @post.body %></p>
+    </div>
+    <hr>
+    <!-- Comments -->
+    <% if @post.comments.any? %>
+      <h3 class="text-primary">Comments</h3>
+      <% @post.comments.each do |comment| %>
+        <div class="card p-3">
+          <p><%= comment.body %>
+          <% if is_admin? %>   
+            <p>  
+              <%= link_to "Edit", edit_post_comment_path(@post, comment) %> | 
+              <%= link_to "Delete", post_comment_path(@post, comment), :data => {:confirm => "You sure?", :method => "delete"} %>
+            </p>    
+          <% end %>
+        </div>
+      <% end %>
+      <hr>
     <% end %>
-  <% end %>
-<% end %>
-
-<hr>
-<% if is_admin? %>   
-  <p><%= link_to "Edit Post", edit_post_path(@post) %></p>
-  <p><%= link_to "Delete Post", post_path(@post), :data => {:confirm => "You sure?", :method => "delete"} %></p>
-  <hr>
-<% end %>
-<p><%= link_to "Add Comment", new_post_comment_path(@post) %></p>
+    <button class="btn btn-dark"><%= link_to "Add Comment", new_post_comment_path(@post) %></button>

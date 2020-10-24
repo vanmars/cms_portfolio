@@ -1,13 +1,15 @@
-<%= render 'shared/errors', object: @post %>
+<div class="card card-shadow p-4">
+  <%= render 'shared/errors', object: @post %>
 
-<%= form_for [@post] do |f| %>
-  <div class='form-group'>
-    <%= f.label :title %>
-    <%= f.text_field :title, class: 'form-control' %>
-  </div>
-  <div class='form-group'>
-    <%= f.label :body %>
-    <%= f.text_field :body, class: 'form-control' %>
-  </div>
-  <%= f.submit 'Submit', class: 'btn btn-success' %>
-<% end %>
+  <%= form_for [@post] do |f| %>
+    <div class='form-group'>
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control' %>
+    </div>
+    <div class='form-group'>
+      <%= f.label :body %>
+      <%= f.text_field :body, class: 'form-control' %>
+    </div>
+    <%= f.submit 'Submit', class: 'btn btn-dark' %>
+  <% end %>
+</div>

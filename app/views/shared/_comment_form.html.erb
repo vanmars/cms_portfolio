@@ -1,9 +1,11 @@
-<%= render 'shared/errors', object: @comment %>
+<div class="card card-shadow p-4">
+  <%= render 'shared/errors', object: @comment %>
 
-<%= form_for [@comment.post, @comment] do |f| %>
-  <div class='form-group'>
-    <%= f.label :body %>
-    <%= f.text_field :body, class: 'form-control' %>
-  </div>
-  <%= f.submit 'Submit', class: 'btn btn-success' %>
-<% end %>
+  <%= form_for [@comment.post, @comment] do |f| %>
+    <div class='form-group'>
+      <%= f.label :body %>
+      <%= f.text_field :body, class: 'form-control' %>
+    </div>
+    <%= f.submit 'Submit', class: 'btn btn-dark' %>
+  <% end %>
+</div>
