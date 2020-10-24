@@ -8,5 +8,5 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
 
   # Validations
-  validates :first_name, :last_name, :username, :email, :password, presence: true
+  validates :email, :password, presence: true
 end
