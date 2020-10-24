@@ -7,7 +7,13 @@ class PostsController < ApplicationController
   end
   
   def index
-    @posts = Post.all
+    if params[:newest]
+      @posts = Post.newest
+    elsif params[:oldest]
+      @posts = Post.oldest
+    else
+      @posts = Post.all
+    end
     render :index
   end
 

@@ -8,6 +8,17 @@
       <% end %>
     </div>
   <!-- Post Cards Grid -->
+  <div class="nav justify-content-around">
+    <form>
+      <input id="newest" name="newest" type="hidden">
+      <button type= "submit" class="btn btn-light">Sort by Newest</button>
+    </form>
+    <form>
+      <input id="oldest" name="oldest" type="hidden">
+      <button type= "submit" class="btn btn-light">Sort by Oldest</button>
+    </form>
+  </div>
+  <br>
   <% if @posts.any? %>
     <div class="row row-cols-1 row-cols-md-2">
       <% @posts.each do |post| %>
@@ -24,6 +35,9 @@
           </div>
         <% end %> 
       </div>
+      
+      
+
       <% else %>
       <div class="card">
         <p>There are no projects yet.</p>
