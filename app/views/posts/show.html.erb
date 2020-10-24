@@ -10,7 +10,12 @@
     </div>
     <!-- Post Card -->
     <div class="card card-shadow p-4">
-      <p class="lead"><%= @post.body %></p>
+      <div class="card-body"
+        <p class="lead"><%= @post.body %></p>
+      </div>
+      <% if @post.image.attached? %>
+        <%= image_tag(@post.image, class:"card-img-bottom", alt:"post image") %>
+      <% end %>
     </div>
     <hr>
     <!-- Comments -->
@@ -19,14 +24,18 @@
       <% @post.comments.each do |comment| %>
         <div class="card p-3">
           <p><%= comment.body %>
-          <p class="muted-text"> - <%= comment.user.username %></p>
-          <% if is_admin? || comment.user == current_user %>   
+          <p class="text-muted"> - <%= comment.user.username %></p>
+          <% if is_admin? || comment.user == current_user %>
+            <br>   
             <p>  
               <%= link_to "Edit", edit_post_comment_path(@post, comment) %> | 
               <%= link_to "Delete", post_comment_path(@post, comment), :data => {:confirm => "You sure?", :method => "delete"} %>
             </p>    
           <% end %>
+          <hr>
+          <p class="card-text"><small class="text-muted">Last updated: <%= comment.updated_at %></small></p>
         </div>
+        <br>
       <% end %>
       <hr>
     <% end %>

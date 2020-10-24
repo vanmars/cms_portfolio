@@ -1,7 +1,9 @@
 class PostsController < ApplicationController
   before_action except: [:index, :show] do 
-    flash[:alert] = 'You do not have access to this content.' unless is_admin?
-    redirect_to posts_path unless is_admin?
+    unless is_admin?
+      flash[:alert] = 'You do not have access to this content.'
+      redirect_to posts_path 
+      end
   end
   
   def index
@@ -16,6 +18,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post.image.attach(params[:post][:image])
     if @post.save
       flash[:notice] = 'Post successfully created!'
       redirect_to post_path(@post)
@@ -55,6 +58,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :body)
+    params.require(:post).permit(:title, :body, :image)
   end
 end
