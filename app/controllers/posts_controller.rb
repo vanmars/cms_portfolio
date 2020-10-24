@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action except: [:index, :show] do 
-    flash[:alert] = 'You do not have access to this content.'
+    flash[:alert] = 'You do not have access to this content.' unless is_admin?
     redirect_to posts_path unless is_admin?
   end
   
