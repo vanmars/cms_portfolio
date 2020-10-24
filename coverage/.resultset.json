@@ -1,25 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/vanessa/Desktop/ruby/cms_portfolio/spec/helpers/home_helper_spec.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/vanessa/Desktop/ruby/cms_portfolio/spec/models/comment_spec.rb": {
         "lines": [
           1,
@@ -727,12 +708,6 @@
           null
         ]
       },
-      "/Users/vanessa/Desktop/ruby/cms_portfolio/app/helpers/home_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/Users/vanessa/Desktop/ruby/cms_portfolio/app/channels/application_cable/channel.rb": {
         "lines": [
           1,
@@ -845,6 +820,14 @@
           null,
           1,
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
           0,
           null,
           null,
@@ -1004,6 +987,16 @@
           null,
           null,
           1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -1053,7 +1046,6 @@
           2,
           2,
           2,
-          2,
           null
         ]
       },
@@ -1074,6 +1066,6 @@
         ]
       }
     },
-    "timestamp": 1603519572
+    "timestamp": 1603522638
   }
 }
