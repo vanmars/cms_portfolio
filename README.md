@@ -18,20 +18,22 @@ It is fine if this is a site that is only for your portfolio, but you are also e
 | #    | Story | 
 | ---- | ----- | 
 | 1 | As an admin, I should be able to log in and log out of the application. |  
-| 2 | As an admin, I should be able to add, update and delete projects. | 
-| 3 | As an admin, I should be able to add posts. |
-| 4 | As an admin, I want to ensure that other users don't have access to CRUD functionality. | 
-| 5 | As a user, I want to be able to create an account and add a comment to a post. (A post can have many comments.) This is the only CRUD functionality a user can have. |
+| 2 | As an admin, I should be able to add, update, and delete projects. | 
+| 3 | As an admin, I should be able to add, update, and delete posts. |
+| 4 | As an admin, I should be able to add, update, and delete comments on posts. |
+| 5 | As an admin, I want to ensure that other users don't have access to CRUD functionality. | 
+| 6 | As an admin, I want to be able to delete comments by other users that are inappropriate. | 
+| 7 | As a user, I want to be able to create an account and add a comment to a post. (A post can have many comments.) |
+| 8 | As a user, I want to update or delete my own comments. Other users should not have this functionality unless they are admins. | 
+
 
 ## Stretch Specifications
 | Spec     | Behavior | 
 | -------- | -------- | 
 | 1 | Add ActiveStorage to the project so admins can add pictures to their projects and posts. |
-| 2 | Allow users to update or delete their own comments. Other users should not have this functionality. | 
-| 3 | Allow admins to delete comments. | 
-| 4 | Add a timestamp to posts and make them sortable by oldest or newest. | 
-| 5 | Allow users to search the site for projects by name. |
-| 6 | Allow users to sort posts based on which post has the most comments. |
+| 2 | Add a timestamp to posts and make them sortable by oldest or newest. | 
+| 3 | Allow users to search the site for projects by name. |
+| 4 | Allow users to sort posts based on which post has the most comments. |
 
 ## Data Tables Visualization
 <img src="./app/assets/images/tables.png">
@@ -94,6 +96,14 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 
 ## Photo Credits
 <span>Home page photo by <a href="https://unsplash.com/@retrosupply?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">RetroSupply</a> on <a href="https://unsplash.com/s/photos/portfolio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+<span>Projects/Posts page photo by <a href="https://unsplash.com/@jesuskiteque?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jesus Kiteque</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+<span>Projects/Posts page photo by <a href="https://unsplash.com/@anete_lusina?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Anete Lūsiņa</a> on <a href="https://unsplash.com/s/photos/portfolio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+<span>Projects/Posts photo by <a href="https://unsplash.com/@otenteko?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Anas Alshanti</a> on <a href="https://unsplash.com/s/photos/portfolio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+<span>Projects/posts photo by <a href="https://unsplash.com/@lum3n?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">LUM3N</a> on <a href="https://unsplash.com/s/photos/portfolio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 ### License
 
