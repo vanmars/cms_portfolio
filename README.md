@@ -26,14 +26,15 @@ It is fine if this is a site that is only for your portfolio, but you are also e
 | 7 | As a user, I want to be able to create an account and add a comment to a post. (A post can have many comments.) |
 | 8 | As a user, I want to update or delete my own comments. Other users should not have this functionality unless they are admins. | 
 | 9 | As an admin, I want to add pictures to my projects and posts. |
-| 10| As a user, I want to sort posts by oldest or newest. |
+| 10 | As a user, I want to sort posts by oldest or newest. |
+| 11 | As a user, I want to sort posts by most comments. |
 
 
 ## Stretch Specifications
 | Spec     | Behavior | 
 | -------- | -------- | 
 | 1 | Allow users to search the site for projects by name. |
-| 2 | Allow users to sort posts based on which post has the most comments. |
+
 
 ## Data Tables Visualization
 <img src="./app/assets/images/tables.png">
