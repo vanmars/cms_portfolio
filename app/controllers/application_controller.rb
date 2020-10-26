@@ -12,6 +12,6 @@ class ApplicationController < ActionController::Base
   end
 
   def is_creator?
-    Comment.find(params[:id]).user = current_user
+    Comment.find(params[:id]).user == current_user
   end
 end
