@@ -13,7 +13,7 @@ describe 'sign in process with registered user' do
 end
 
 describe 'sign in process with unregistered user' do
-  it 'signs in a registered user' do
+  it 'reloads log in page' do
     visit '/'
     click_link 'Sign In'
     fill_in 'Email', with: 'test20@email.com'
