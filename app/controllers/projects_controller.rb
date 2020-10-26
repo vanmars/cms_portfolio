@@ -18,7 +18,9 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(project_params)
-    @project.image.attach(params[:project][:image])
+    if params[:project][:image]
+      @project.image.attach(params[:project][:image])
+    end
     if @project.save
       flash[:notice] = "Project successfully added!"
       redirect_to project_path(@project)
