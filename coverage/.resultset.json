@@ -816,10 +816,10 @@
           1,
           null,
           1,
-          4,
-          0,
+          6,
+          1,
           null,
-          4,
+          5,
           null,
           null,
           null,
@@ -1038,7 +1038,22 @@
       },
       "/Users/vanessa/Desktop/ruby/cms_portfolio/spec/features/signup_spec.rb": {
         "lines": [
-
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
         ]
       },
       "/Users/vanessa/Desktop/ruby/cms_portfolio/spec/models/comment_spec.rb": {
@@ -1105,6 +1120,6 @@
         ]
       }
     },
-    "timestamp": 1603692945
+    "timestamp": 1603694638
   }
 }
