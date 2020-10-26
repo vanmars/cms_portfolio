@@ -26,7 +26,9 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    @post.image.attach(params[:post][:image])
+    if params[:post][:image]
+      @post.image.attach(params[:post][:image])
+    end
     if @post.save
       flash[:notice] = 'Post successfully created!'
       redirect_to post_path(@post)
