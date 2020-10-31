@@ -3,11 +3,6 @@
     "coverage": {
       "/Users/vanessa/Desktop/ruby/cms_portfolio/spec/features/logout_spec.rb": {
         "lines": [
-
-        ]
-      },
-      "/Users/vanessa/Desktop/ruby/cms_portfolio/spec/features/signin_spec.rb": {
-        "lines": [
           1,
           null,
           1,
@@ -18,18 +13,7 @@
           1,
           1,
           1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
           null,
           null
         ]
@@ -816,10 +800,10 @@
           1,
           null,
           1,
-          6,
+          7,
           1,
           null,
-          5,
+          6,
           null,
           null,
           null,
@@ -1036,6 +1020,34 @@
           null
         ]
       },
+      "/Users/vanessa/Desktop/ruby/cms_portfolio/spec/features/signin_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/vanessa/Desktop/ruby/cms_portfolio/spec/features/signup_spec.rb": {
         "lines": [
           1,
@@ -1120,6 +1132,6 @@
         ]
       }
     },
-    "timestamp": 1603694638
+    "timestamp": 1603694822
   }
 }

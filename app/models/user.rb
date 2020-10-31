@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   # Associations
   has_many :comments, dependent: :destroy
+  has_many :projects, dependent: :destroy
 
   # Validations
   validates :email, :password, presence: true
