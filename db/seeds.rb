@@ -2,12 +2,14 @@ class Seed
 
   def self.begin
     User.destroy_all
+    Project.destroy_all
+    Post.destroy_all
     seed = Seed.new
-    seed.generate_admins
-    # seed.generate_users
+    seed.generate_admins_and_projects
+    seed.generate_users_and_posts
   end
 
-  def generate_admins
+  def generate_admins_and_projects
     admin1 = User.create!(
         first_name: 'Vanessa',
         last_name: 'Stewart',
@@ -15,9 +17,7 @@ class Seed
         email: 'test1@email.com',
         password: 'student',
         admin: true
-      )
-      2.times do
-      end
+    )
     admin2 = User.create!(
       first_name: 'Ada',
       last_name: 'Lovelace',
@@ -35,10 +35,17 @@ class Seed
       admin: true
     )
     puts "3 admins successfully generated."
+    6.times do |t|
+      project = Project.create!(
+        title: Faker::Book.title,
+        description: Faker::Book.genre
+      )
+    end
+    puts "6 projects successfully generated."
   end
 
-  def generate_users
-    50.times do | index |
+  def generate_users_and_posts
+    10.times do |index|
       user = User.create!(
         first_name: Faker::Name.first_name,
         last_name: Faker::Name.last_name,
@@ -46,12 +53,21 @@ class Seed
         email: Faker::Internet.email,
         password: Faker::Internet.password
       )
+      5.times do |index|
+        post = Post.create!(
+          title: Faker::Quotes::Shakespeare.as_you_like_it_quote,
+          body: Faker::Lorem.paragraph(sentence_count: 5)
+        )
+        5.times do |index|
+          comment = post.comments.create!(
+            body: Faker::TvShows::MichaelScott.quote,
+            user_id: user.id
+          )
+        end
+      end
     end
-    puts "50 users successfully generated."
+    puts "10 users, 50 posts, 250 comments successfully generated."
   end
-
-
-
 end
 
 Seed.begin

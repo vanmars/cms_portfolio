@@ -13,12 +13,6 @@
       <div class="card-body">
         <h3 class="display-4">Description<br><span class="lead"><%= @project.description %></span></h3>
         <hr>
-        <% if @project.complete? %>
-          <h3 class="display-4">Status: <span class="lead">Complete!</span></h3>
-        <% else %>
-          <h3>Status: <span class="lead">In progress</span></h3>
-        <% end %>
-        <hr>
         <p class="card-text"><small class="text-muted">Last updated: <%= @project.updated_at %></small></p>
       </div>
       <% if @project.image.attachment != nil %>
