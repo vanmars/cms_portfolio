@@ -1,8 +1,8 @@
-# _Basic CMS Portfolio Application_
+# _Portfolio Application_
 
 _23 October 2020_
 
-#### _Application for building a portfolio site quickly_
+#### _Portfolio application for showcasing projects and posts_
 
 #### By _**Vanessa Stewart**_
 
@@ -29,20 +29,10 @@ It is fine if this is a site that is only for your portfolio, but you are also e
 | 10 | As a user, I want to sort posts by oldest or newest. |
 | 11 | As a user, I want to sort posts by most comments. |
 
-
-## Stretch Specifications
-| Spec     | Behavior | 
-| -------- | -------- | 
-| 1 | Allow users to search the site for projects by name. |
-
-
 ## Data Tables Visualization
 <img src="./app/assets/images/tables.png">
 
 ## Setup/Installation Requirements
-
-To View Project:
-* Open a web browser of your choice and navigate to the following page: COMING SOON!
 
 To Extend Project:
 1. Install Rails
@@ -60,7 +50,7 @@ To Extend Project:
 
 4. Open in Text Editor
 - Open the cloned repo in a text editor of your choice.
-- To Run Tests: While in the root directory of this project, run `rspec` in your command line.
+- To Run Tests: While in the root directory of this project, run `rspec` in your command line. If this command gives you trouble, try using `bundle exec rspec` instead.
 - To Run the App in Browser: While in the root directory of the project, run `rails s` in the terminal. This will start a server, which you can access by entering `localhost:3000` in your browser.
 
 5. To Set a New Admin User
@@ -73,12 +63,11 @@ To Extend Project:
 
 ## Known Bugs
 
-* Registration form does not add first, last, and user name to database. I suspect the problem is in the views devise folder. 
+* Although registration form contains fields for first, last, and user name, upon submission these entries are not saved to the database. I suspect the problem is in the views devise folder. 
 
 ## Items to Improve
 
-* Complete final stretch specification.
-* Add integration tests
+* Though testing was not the goal of this project, it would be good form to add integration tests
 * Refactor controllers
 * Make devise user flash messages white for readability
 
@@ -92,8 +81,8 @@ _Connect with me at vamariestewart@gmail.com with ideas to improve this project.
 * CSS/Bootstrap
 * Ruby
 * Ruby on Rails
-* Added Ruby Gems: Capybara, Devise, jQuery-Rails, Launchy, Pry, RSpec-Rails, Shoulda-Matchers, SimpleCov
 * Postgres
+* Added Ruby Gems: Capybara, Devise, jQuery-Rails, Launchy, Pry, RSpec-Rails, Shoulda-Matchers, SimpleCov
 
 ## Photo Credits
 <span>Home page photo by <a href="https://unsplash.com/@retrosupply?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">RetroSupply</a> on <a href="https://unsplash.com/s/photos/portfolio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
