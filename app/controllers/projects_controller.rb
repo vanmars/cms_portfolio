@@ -12,6 +12,7 @@ class ProjectsController < ApplicationController
   end
 
   def new
+    @user = current_user
     @project = Project.new
     render :new
   end
