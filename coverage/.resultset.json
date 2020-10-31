@@ -3,6 +3,23 @@
     "coverage": {
       "/Users/vanessa/Desktop/ruby/cms_portfolio/spec/features/logout_spec.rb": {
         "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/vanessa/Desktop/ruby/cms_portfolio/spec/features/signin_spec.rb": {
+        "lines": [
           1,
           null,
           1,
@@ -13,7 +30,18 @@
           1,
           1,
           1,
-          0,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -673,6 +701,8 @@
           null,
           null,
           1,
+          1,
+          1,
           null,
           null,
           1,
@@ -800,10 +830,10 @@
           1,
           null,
           1,
-          7,
+          6,
           1,
           null,
-          6,
+          5,
           null,
           null,
           null,
@@ -990,6 +1020,7 @@
           1,
           null,
           1,
+          1,
           null,
           null,
           1,
@@ -1017,34 +1048,9 @@
           null,
           null,
           1,
-          null
-        ]
-      },
-      "/Users/vanessa/Desktop/ruby/cms_portfolio/spec/features/signin_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
           null,
           null,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
           null
         ]
       },
@@ -1073,6 +1079,7 @@
           1,
           null,
           1,
+          null,
           2,
           2,
           null,
@@ -1085,6 +1092,8 @@
           1,
           null,
           1,
+          null,
+          2,
           2,
           null,
           2,
@@ -1097,7 +1106,9 @@
           1,
           null,
           1,
+          null,
           2,
+          null,
           2,
           2,
           null
@@ -1108,6 +1119,9 @@
           1,
           null,
           1,
+          null,
+          2,
+          2,
           2,
           null,
           2,
@@ -1132,6 +1146,6 @@
         ]
       }
     },
-    "timestamp": 1603694822
+    "timestamp": 1604117030
   }
 }

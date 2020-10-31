@@ -6,5 +6,5 @@ class Project < ApplicationRecord
   belongs_to :user
 
   # Validations
-  validates :title, :description, :complete, presence: true
+  validates :title, :description, presence: true
 end
