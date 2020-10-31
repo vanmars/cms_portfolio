@@ -52,11 +52,15 @@ To Extend Project:
 - Open the cloned repo in a text editor of your choice.
 - To Run Tests: While in the root directory of this project, run `rspec` in your command line. If this command gives you trouble, try using `bundle exec rspec` instead.
 - To Run the App in Browser: While in the root directory of the project, run `rails s` in the terminal. This will start a server, which you can access by entering `localhost:3000` in your browser.
+- There are three admin accounts that are seeded to the database. Use any of the following emails and passwords to login as an admin:
+* Email: test1@email.com  Password: student
+* Email: test2@email.com  Password: master
+* Email: test3@email.com  Password: legend
 
-5. To Set a New Admin User
+5. To Set a New Admin User in Terminal
 - Run `rails c` in terminal to open up Rails console.
 - Run `User.all` to see all users in database.
-- Find the correct one and save in variable. (Ex. `user = User.all.first`)
+- Find the correct user and save in variable. (Ex. `user = User.all.first`)
 - Set user variable's admin value to true. (Ex. `user.admin = true`)
 - Save user (Ex. `user.save`)
 - Leave the conosle by running `exit`.
@@ -67,9 +71,9 @@ _There are no known bugs at this time._
 
 ## Items to Improve
 
-* Though testing was not the goal of this project, it would be good form to add integration tests
-* Refactor controllers
-* Make devise user flash messages white for readability
+* Though testing was not the goal of this project, it would be good form to add integration tests.
+* Refactor controllers.
+* Make devise user flash messages white for readability.
 
 ## Support and Contact Details
 

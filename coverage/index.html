@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-10-30T22:07:53-07:00">2020-10-30T22:07:53-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-10-31T00:13:36-07:00">2020-10-31T00:13:36-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="red">
-  66.77%
+  67.3%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.74
+         0.78
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>310</b> relevant lines,
-    <span class="green"><b>207</b> lines covered</span> and
+    <b>315</b> relevant lines,
+    <span class="green"><b>212</b> lines covered</span> and
     <span class="red"><b>103</b> lines missed. </span>
     (<span class="red">
-  66.77%
+  67.3%
 </span>
 )
   </div>
@@ -94,12 +94,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#535a267c4ce7ff06314be4271648ef1b985a7a7e" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">75.00 %</td>
-            <td class="cell--number">17</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">6</td>
+            <td class="yellow strong cell--number t-file__coverage">84.62 %</td>
+            <td class="cell--number">26</td>
+            <td class="cell--number">13</td>
+            <td class="cell--number">11</td>
             <td class="cell--number">2</td>
-            <td class="cell--number">0.75</td>
+            <td class="cell--number">1.92</td>
             
           </tr>
         
@@ -670,8 +670,8 @@
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
     <h4>
-      <span class="red">
-  75.0%
+      <span class="yellow">
+  84.62%
 </span>
 
       lines covered
@@ -680,8 +680,8 @@
     
 
     <div class="t-line-summary">
-      <b>8</b> relevant lines.
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>13</b> relevant lines.
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>2</b> lines missed.</span>
     </div>
 
@@ -870,6 +870,105 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">  # Configure Devise Strong Parameters</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  before_action :configure_permitted_parameters, if: :devise_controller?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">protected</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def configure_permitted_parameters</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="23">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">    devise_parameter_sanitizer.permit(:sign_up, keys: [:username, :first_name, :last_name])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="24">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">    devise_parameter_sanitizer.permit(:account_update, keys: [:username, :first_name, :last_name])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
             
             
 
