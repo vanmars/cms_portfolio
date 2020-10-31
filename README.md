@@ -63,7 +63,7 @@ To Extend Project:
 
 ## Known Bugs
 
-* Although registration form contains fields for first, last, and user name, upon submission these entries are not saved to the database. I suspect the problem is in the views devise folder. 
+_There are no known bugs at this time._
 
 ## Items to Improve
 
