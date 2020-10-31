@@ -8,7 +8,7 @@ _23 October 2020_
 
 ## Description
 
-_This is a Friday project for Epicodus to practice authentication and authorization with Ruby on Rails. the original instructions include:_
+_This is a Friday project for Epicodus to practice authentication and authorization with Ruby on Rails. The original instructions include:_
 
 Based on your work as a freelance developer for Mario's Speciality Food Products, you've been hired on at a local development agency. They have tasked you with your first project: building a basic content management system (or CMS). This CMS will be a basic portfolio site so that users can build their own portfolios.
 
